@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cn.ksmcbrigade.si.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "si.refmap.json",
+  "mixins": [
+    "BowMixin",
+    "CrossbowMixin"
+  ],
+  "client": [
+    "ThrowableItemRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
