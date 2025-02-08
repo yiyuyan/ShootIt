@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.entity.boss.enderdragon.EndCrystal;
 import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.entity.projectile.*;
 import net.minecraft.world.item.*;
@@ -63,6 +64,7 @@ public class ShootIt {
         if(item.equals(Items.TNT) || item.equals(Items.TNT_MINECART)) return new ItemProjectile(level,itemStack,new PrimedTnt(level,owner.getX(),owner.getY(),owner.getZ(),owner),null,owner);
         if(item.equals(Items.DRAGON_BREATH)) return new DragonFireball(level,owner,owner.getX(),owner.getY(),owner.getZ());
         if(item.equals(Items.EXPERIENCE_BOTTLE)) return new ThrownExperienceBottle(level,owner);
+        if(item.equals(Items.END_CRYSTAL)) return new ItemProjectile(level,itemStack,new EndCrystal(level,owner.getX(),owner.getY(),owner.getZ()),null,owner);
         if(item instanceof PotionItem){
             ThrownPotion thrownPotion = new ThrownPotion(level,owner);
             thrownPotion.setItem(itemStack);

@@ -9,7 +9,6 @@
     "CrossbowMixin"
   ],
   "client": [
-    "ThrowableItemRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

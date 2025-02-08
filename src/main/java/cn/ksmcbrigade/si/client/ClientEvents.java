@@ -12,7 +12,7 @@ public class ClientEvents {
 
     @SubscribeEvent
     public static void onRegisterRenderer(EntityRenderersEvent.RegisterRenderers event) {
-        event.registerEntityRenderer(ShootIt.TYPE_REGISTRY_OBJECT.get(), ThrownItemRenderer::new);
+        event.registerEntityRenderer(ShootIt.TYPE_REGISTRY_OBJECT.get(), ItemProjectileRenderer::new);
         ShootIt.LOGGER.info("Entity Renderer registered.");
     }
 }
